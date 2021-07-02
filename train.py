@@ -14,7 +14,19 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-ds = ### YOUR CODE HERE ###
+# azureml-core of version 1.0.72 or higher is required
+# azureml-dataprep[pandas] of version 1.1.34 or higher is required
+from azureml.core import Workspace, Dataset
+
+subscription_id = '3d1a56d2-7c81-4118-9790-f85d1acf0c77'
+resource_group = 'aml-quickstarts-148699'
+workspace_name = 'quick-starts-ws-148699'
+
+workspace = Workspace(subscription_id, resource_group, workspace_name)
+
+ds = Dataset.get_by_name(workspace, name='Bank-marketing')
+# ds.to_pandas_dataframe()
+
 
 x, y = clean_data(ds)
 
