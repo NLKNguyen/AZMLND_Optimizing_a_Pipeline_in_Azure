@@ -99,9 +99,5 @@ Furthermore, increasing experiment timeout and number of cross validation for Au
 
 ## Proof of cluster clean up
 
-```python
-# Cluster cleanup
-cpu_cluster.delete()
-```
-
+![image](https://user-images.githubusercontent.com/4667129/125048185-83520f80-e054-11eb-9ae3-186e48aead9b.png)
 
