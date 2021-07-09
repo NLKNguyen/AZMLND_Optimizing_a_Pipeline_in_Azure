@@ -319,7 +319,7 @@ AutoML takes much longer time than using HyperDrive with the provided parameter 
 
 As a result, AutoML can combine multiple models to ensemble a more complex model than yields higher accuracy. However, it is only slighly better than the HyperDrive approach, and the complex model is much harder to explain from human perspective. There are interpretation benefits of a simpler model even if it has worse performance. Luckily, AutoML still generates dozen of standalone models that can be easier to interpret and still have better performance than the best model found with HyperDrive. Therefore, AutoML is clearly beneficial in all fronts except a longer training time which is a very small trade off.
 
-The best model obtained by HyperDrive has the accuracy of **0.9102** using Logicstic Regression modoel with `inverse of regularization strength` = 2.0042503760886294 and `maximum number of iterations to converge` = 300
+The best model obtained by HyperDrive has the accuracy of **0.9102** using Logicstic Regression modoel with `inverse of regularization strength` = 1.1132274914068034 and `maximum number of iterations to converge` = 250
 
 The best model obtained by AutoML has the accuracy of **0.9169** using Voting Ensemble model that combines 3 different types of models in various configurations as detailed in the AutoML section.
 
