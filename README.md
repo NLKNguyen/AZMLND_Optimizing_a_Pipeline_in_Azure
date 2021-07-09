@@ -91,7 +91,6 @@ AutoML takes much longer time than using HyperDrive with the provided parameter 
 As a result, AutoML can combine multiple models to ensemble a more complex model than yields higher accuracy. However, it is only slighly better than the HyperDrive approach, and the complex model is much harder to explain from human perspective. There are interpretation benefits of a simpler model even if it has worse performance. Luckily, AutoML still generates dozen of standalone models that can be easier to interpret and still have better performance than the best model found with HyperDrive. Therefore, AutoML is clearly beneficial in all fronts except a longer training time which is a very small trade off.
 
 ## Future work
-**What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
 Since the labels in the provided dataset are highly imbalanced (89% vs 11%), this can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class. Improving this will surely be beneficial. One way is to find more data of the smaller class, or using synthetic data generation technique is also useful.
 
