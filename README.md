@@ -10,8 +10,9 @@ This model is then compared to an Azure AutoML run.
 This dataset contains data about a marketing campaign including people who contacted/answered the calls, and we seek to predict a yes/no answer to whether a person is a potential lead in this campaign.
 
 Two approaches of building the models were in practice:
-    1. Build a Logicstic Regression model using Scikit-Learn library with hyperparameter tuning by Azure HyperDrive to find the best model
-    2. Build many dozens of models automatically using Azure AutoML to find the best model    
+
+1. Build a Logicstic Regression model using Scikit-Learn library with hyperparameter tuning by Azure HyperDrive to find the best model
+2. Build many dozens of models automatically using Azure AutoML to find the best model    
 
 ## Scikit-learn Pipeline
 
