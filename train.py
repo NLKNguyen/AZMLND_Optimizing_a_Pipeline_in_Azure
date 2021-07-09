@@ -46,7 +46,7 @@ ds = TabularDatasetFactory.from_delimited_files("https://automlsamplenotebookdat
 # print(ds)
 # exit()
 x, y = clean_data(ds)
-print(x,y)
+#print(x,y)
 
 # [X] TODO: Split data into train and test sets.
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.33, random_state = 42)
